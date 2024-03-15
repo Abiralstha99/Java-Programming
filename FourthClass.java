@@ -15,7 +15,7 @@ public class FourthClass {
 
 
         //Print sum of first n natural numbers
-        Scanner sc = new Scanner (System.in);
+         Scanner sc = new Scanner (System.in);
         System.out.println("Enter n");
         int n = sc.nextInt();
         int sum = 0;
@@ -25,6 +25,6 @@ public class FourthClass {
            i++;
         }
         System.out.println(sum);
-        sc.close();
+        sc.close(); 
     }
 }
