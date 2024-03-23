@@ -31,19 +31,62 @@ public class Function {
 
     // Function for a factorial
 
-    public static void fact(int a) {
-        int n = 1;
-        for (int i = 1; i <= a; i++) {
-            n = n * i;
+    /*
+     * public static void fact(int a) {
+     * int n = 1;
+     * for (int i = 1; i <= a; i++) {
+     * n = n * i;
+     * }
+     * System.out.println("The factorial is " + n);
+     * }
+     * 
+     * public static void main(String[] args) {
+     * System.out.print("Enter the number");
+     * Scanner sc = new Scanner(System.in);
+     * int num = sc.nextInt();
+     * fact(num);
+     * }
+     */
+
+    // Program to calculate prime or composite
+
+    /*
+     * public static void calculate(int n) {
+     * int j = 0;
+     * for (int i = 1; i < n; i++) {
+     * if (n % i == 0) {
+     * j++;
+     * }
+     * }
+     * if (j == 1) {
+     * System.out.print("Prime");
+     * } else {
+     * System.err.print("Composite");
+     * }
+     * }
+     * 
+     * public static void main(String[] args) {
+     * System.out.print("Enter a number");
+     * Scanner sc = new Scanner(System.in);
+     * int n = sc.nextInt();
+     * calculate(n);
+     * }
+     */
+
+    // WAP to print multiplication table of a number
+
+    public static void mult(int num) {
+        for (int i = 1; i <= 10; i++) {
+            int n = num * i;
+            System.out.println(num + " * " + i + " = " + n);
         }
-        System.out.println("The factorial is " + n);
     }
 
     public static void main(String[] args) {
-        System.out.print("Enter the number");
+        System.out.println("Enter the number");
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        fact(num);
+        mult(num);
     }
 
 }
