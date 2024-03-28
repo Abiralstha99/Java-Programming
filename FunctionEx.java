@@ -154,11 +154,66 @@ public class FunctionEx {
     // 8. Two numbers are entered by the user, x and n. Write a function to find the
     // value of one number raised to the power of another i.e. x^n.
 
+    /*
+     * public static void main(String[] args) {
+     * Scanner sc = new Scanner(System.in);
+     * int x = sc.nextInt();
+     * int n = sc.nextInt();
+     * System.out.println(Math.pow(x, n));
+     * sc.close();
+     * }
+     */
+
+    // 9.Write a function that calculates the Greatest Common Divisor of 2 numbers.
+    // (BONUS)
+
+    /*
+     * public static void HCF(int a, int b) {
+     * int min = Math.min(a, b);
+     * while (min > 0) {
+     * if (a % min == 0 && b % min == 0) {
+     * System.out.println("The HCF is " + min);
+     * } else
+     * min = min - 1;
+     * }
+     * }
+     * 
+     * public static void main(String[] args) {
+     * System.out.println("Enter first number");
+     * Scanner sc = new Scanner(System.in);
+     * int a = sc.nextInt();
+     * System.out.println("Enter first number");
+     * int b = sc.nextInt();
+     * HCF(a, b);
+     * sc.close();
+     * 
+     * }
+     */
+
+    // 10. Write a program to print Fibonacci series of n terms where n is input by
+    // user :
+    // 0 1 1 2 3 5 8 13 21 ..... In the Fibonacci series, a number is the sum of the
+    // previous 2 numbers that came before it. (BONUS)
+
+    public static void fib(int n) {
+        int a = 0;
+        int b = 1;
+        int c = 0;
+        System.out.println(a);
+        for (int i = 1; i <= n; i++) {
+            System.out.println(a);
+            c = a + b;
+            a = b;
+            b = c;
+        }
+
+    }
+
     public static void main(String[] args) {
+        System.out.println("Enter nth term");
         Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
         int n = sc.nextInt();
-        System.out.println(Math.pow(x, n));
+        fib(n);
         sc.close();
     }
 
