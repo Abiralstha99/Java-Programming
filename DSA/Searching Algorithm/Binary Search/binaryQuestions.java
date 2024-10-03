@@ -4,7 +4,7 @@ public class binaryQuestions {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// Ceiling of a number : smallest element in array greater or = target 
-		/* int [] arr = {2,3,5,9,14,16,18 };
+		 int [] arr = {2,3,5,9,14,16,18 };
 		int target = 17;
 		System.out.println(binarySearch(arr, target));
 		
@@ -26,12 +26,7 @@ public class binaryQuestions {
 				end = mid-1;
 			}
 		}
-		return arr[start];
-		*/
-		
-		
-		
-		
+		return arr[start];	
 	}
 
 }
