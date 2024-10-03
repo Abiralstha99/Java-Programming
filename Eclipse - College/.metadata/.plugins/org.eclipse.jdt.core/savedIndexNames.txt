@@ -1,8 +1,0 @@
-INDEX VERSION 1.134+/Users/abiralshrestha/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
-1865797976.index
-1041244766.index
-4091702570.index
-3246098685.index
-1755597432.index
-3491644274.index
-1053506297.index
